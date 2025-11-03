@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp"
+    android:layout_marginBottom="15sp"
+    android:background="@drawable/backgroundshape">
+
+    <!-- TextView cho ngày -->
+    <TextView
+        android:id="@+id/tvDate"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:gravity="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintWidth_percent="0.2"
+        android:text="14/03"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        />
+
+    <!-- ImageView cho icon thời tiết -->
+    <ImageView
+        android:id="@+id/ivWeatherIcon"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:padding="4dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toEndOf="@id/tvDate"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintWidth_percent="0.1"
+         />
+
+    <!-- TextView cho khả năng mưa -->
+    <TextView
+        android:id="@+id/tvRainChance"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:gravity="center"
+        app:layout_constraintStart_toEndOf="@id/ivWeatherIcon"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintWidth_percent="0.3"
+        android:text="20%"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        />
+
+    <!-- TextView cho nhiệt độ max -->
+    <TextView
+        android:id="@+id/tvTempMax"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:gravity="center"
+        app:layout_constraintStart_toEndOf="@id/tvRainChance"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintWidth_percent="0.2"
+        android:text="30.0°C"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+         />
+
+    <!-- TextView cho nhiệt độ min -->
+    <TextView
+        android:id="@+id/tvTempMin"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:gravity="center"
+        app:layout_constraintStart_toEndOf="@id/tvTempMax"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintWidth_percent="0.2"
+        android:text="20.0°C"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+       />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
